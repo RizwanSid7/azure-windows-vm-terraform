@@ -36,6 +36,9 @@ azure-Windows-vm-terraform/
 ├── outputs.tf # Output values (e.g., public IP)
 ├── README.md # Project documentation
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -50,25 +53,25 @@ azure-Windows-vm-terraform/
 ## 🔧 Usage Instructions
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/RizwanSid7/azure-windows-vm-terraform.git
    cd azure-windows-vm-terraform
+(Optional) Modify terraform.tfvars to set your admin password and other variables.
 
-2. (Optional) Modify terraform.tfvars to set your admin password and other variables.
-
-3. Initialize Terraform:
+1. Initialize Terraform:
    terraform init
 
-4. Validate the configuration:
+2. Validate the configuration:
    terraform validate
 
-5. Preview the infrastructure changes:
+3. Preview the infrastructure changes:
    terraform plan
 
-6. Apply the configuration and create resources:
+4. Apply the configuration and create resources:
    terraform apply
 
-7. After deployment, note the public IP address of the VM (shown as output).
+After deployment, note the public IP address of the VM (shown as output).
 
 🔒 Security Best Practices
 Sensitive data like the admin password is marked sensitive in variables.
@@ -80,8 +83,8 @@ Avoid hardcoding sensitive information directly in .tf files.
 Use remote state backend in production (not included here but highly recommended).
 
 🔄 Cleanup
-To remove all deployed resources and avoid charges:
-    terraform destroy
+5. To remove all deployed resources and avoid charges:
+   terraform destroy
 
 🤝 Author
 Rizwan Siddiqui
